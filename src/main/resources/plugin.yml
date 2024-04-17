@@ -1,0 +1,18 @@
+name: TemplatePlugin
+version: '${project.version}'
+main: org.strassburger.templateplugin.TemplatePlugin
+api-version: '1.20'
+authors: [Authorname]
+description: Template Plugin description
+
+softdepend: [PlaceholderAPI]
+
+commands:
+    template:
+        description: Template command
+        permission: templateplugin.command
+
+permissions:
+    templateplugin.command:
+        description: Permission for the template command
+        default: true
